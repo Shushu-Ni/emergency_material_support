@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.JiankangdakaMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Jiankangdaka">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="xingming" property="xingming" jdbcType="VARCHAR"/>
+                                    <result column="shijian" property="shijian" jdbcType="VARCHAR"/>
+                                    <result column="didian" property="didian" jdbcType="VARCHAR"/>
+                                    <result column="beizhu" property="beizhu" jdbcType="VARCHAR"/>
+                                    <result column="dakaren" property="dakaren" jdbcType="VARCHAR"/>
+                                                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, xingming, shijian, didian, beizhu, dakaren, addtime    </sql>
+    </mapper>
